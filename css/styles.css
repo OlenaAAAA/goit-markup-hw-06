@@ -590,6 +590,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0.04em;
   min-width: 165px;
   height: 40px;
   outline: none;
@@ -829,7 +830,6 @@ img {
   position: relative;
 }
 
-.contact-form-field:hover + .form-field-icon,
 .contact-form-field:focus + .form-field-icon {
   fill: var(--ocean-color);
 }
@@ -920,7 +920,6 @@ img {
 .agreement-wrapper {
   margin-bottom: 24px;
 }
-
 .agreement-label {
   /* display: flex; */
   align-items: center;
