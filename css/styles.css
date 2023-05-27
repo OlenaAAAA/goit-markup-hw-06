@@ -889,11 +889,7 @@ img {
   /* transform: translateX(16px); */
 }
 
-.agreement-checkbox {
-  margin-right: 8px;
-  width: 16px;
-  height: 16px;
-}
+/* --------- Privacy Policy---------- */
 
 .agreement-label {
   display: flex;
@@ -906,6 +902,27 @@ img {
   color: var(--light-slate-color);
 }
 
+.agreement-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.agreement-custom-checkbox {
+  border: 1px solid var(--ocean-color);
+  border-radius: 2px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.agreement-icon {
+  opacity: 0;
+}
+
+.agreement-checkbox:checked + .agreement-custom-checkbox > .agreement-icon {
+  opacity: 1;
+}
+
+/* 
 .agreement-text {
   display: flex;
   /* align-items: center;
@@ -914,14 +931,15 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate-color); */
-  /* padding-left: 48px;
+/* padding-left: 48px;
   padding-right: 22px; */
-}
 
 .privacy-policy-link {
   margin-left: 3px;
   color: var(--color);
 }
+
+/* ---------submit button---------- */
 
 .form-submit-btn {
   display: block;
