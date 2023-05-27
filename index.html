@@ -584,7 +584,7 @@
         </div>
         <div class="footer-subscribe-container">
           <p class="footer-media-text">Subscribe</p>
-          <div class="footer-subscribe">
+          <form class="footer-subscribe">
             <label class="footer-subscribe-label">
               <input
                 class="email-input"
@@ -600,14 +600,14 @@
                 <svg
                   class="subscribe-btn-icon"
                   width="24"
-                  height="20"
+                  height="24"
                   aria-label="subscribe-button"
                 >
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -622,24 +622,20 @@
         </button>
 
         <!-- модальна форма NAME PHONE EMAIL-->
-
+        <p class="contact-form-header">
+          Leave your contacts and we will call you back
+        </p>
         <form class="contact-form-wrapper">
-          <span class="contact-form-header"
-            >Leave your contacts and we will call you back</span
-          >
           <div class="form-wrapper">
-            <label
-              class="contact-form-field-wrapper contact-form-field-name"
-              for="user_name"
-            >
+            <label class="contact-form-field-wrapper" for="user-name">
               Name
             </label>
             <div class="contact-form-item">
               <input
                 class="contact-form-field"
                 type="text"
-                id="user_name"
-                name="user_name"
+                id="user-name"
+                name="user-name"
                 required
                 pattern="[a-zA-Zа-яА-ЯіІїЇєЄ'ґҐ]+"
               />
@@ -654,15 +650,15 @@
             </div>
           </div>
           <div class="form-wrapper">
-            <label class="contact-form-field-wrapper" for="user_tel">
+            <label class="contact-form-field-wrapper" for="user-tel">
               Phone
             </label>
             <div class="contact-form-item">
               <input
                 class="contact-form-field"
                 type="tel"
-                id="user_tel"
-                name="user_tel"
+                id="user-tel"
+                name="user-tel"
                 required
                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                 title="xxx-xxx-xx-xx"
@@ -678,15 +674,15 @@
             </div>
           </div>
           <div class="form-wrapper">
-            <label class="contact-form-field-wrapper" for="user_email">
+            <label class="contact-form-field-wrapper" for="user-email">
               Email
             </label>
             <div class="contact-form-item">
               <input
                 class="contact-form-field"
                 type="email"
-                id="user_email"
-                name="user_email"
+                id="user-email"
+                name="user-email"
                 required
               />
               <svg
@@ -702,44 +698,49 @@
 
           <!-- модальна форма COMMENT-->
 
-          <label class="contact-form-field-wrapper" for="user_comment">
-            Comment
-          </label>
-          <textarea
-            class="contact-form-comment"
-            name="user_comment"
-            id="user_comment"
-            placeholder="Text input"
-          ></textarea>
+          <div class="comment-wrapper">
+            <label class="contact-form-field-wrapper" for="user-comment">
+              Comment
+            </label>
+            <textarea
+              class="contact-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
 
-          <!-- модальна форма Privacy Policy-->
+          <!--------  Privacy Policy-------->
 
-          <label class="agreement-label">
+          <div class="agreement-wrapper">
             <input
-              class="agreement-checkbox"
+              class="agreement-checkbox visually-hidden"
               type="checkbox"
-              name="agreement"
-              value="agreement"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
               required
             />
+            <label class="agreement-label" for="user-privacy">
+              <span class="agreement-checkbox-wrap">
+                <svg
+                  class="agreement-custom-checkbox"
+                  width="10"
+                  height="8"
+                  aria-label="icon-of-click"
+                >
+                  <use
+                    class="agreement-icon"
+                    href="./images/icons.svg#icon-click"
+                  ></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
 
-            <svg
-              class="agreement-custom-checkbox"
-              width="16"
-              height="16"
-              aria-label="icon-of-click"
-            >
-              <use
-                class="agreement-icon"
-                href="./images/icons.svg#icon-click"
-              ></use>
-            </svg>
-
-            I accept the terms and conditions of the
-            <a class="privacy-policy-link" href="">Privacy Policy</a>
-          </label>
-
-          <!-- SUBMIT BUTTON -->
+          <!------------ SUBMIT BUTTON ----------->
 
           <button type="submit" class="form-submit-btn">Send</button>
         </form>
