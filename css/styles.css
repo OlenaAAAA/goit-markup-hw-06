@@ -850,7 +850,13 @@ img {
 .contact-form-field:hover,
 .contact-form-field:focus {
   border-color: var(--color);
+  fill: #4d5ae5;
   /* outline: none; */
+}
+
+.contact-form-item:hover,
+.contact-form-item:focus {
+  fill: #4d5ae5;
 }
 
 .form-field-icon {
@@ -953,9 +959,9 @@ img {
   cursor: pointer;
 }
 
-.agreement-icon {
+/* .agreement-icon {
   opacity: 0;
-}
+} */
 
 .agreement-checkbox:checked + .agreement-label > .agreement-checkbox-wrap {
   background-color: #404bbf;
@@ -964,9 +970,9 @@ img {
   border-color: var(--ocean-color);
 }
 
-.agreement-checkbox:checked + .agreement-custom-checkbox > .agreement-icon {
+/* .agreement-checkbox:checked + .agreement-custom-checkbox > .agreement-icon {
   opacity: 1;
-}
+} */
 
 /* 
 .agreement-text {
