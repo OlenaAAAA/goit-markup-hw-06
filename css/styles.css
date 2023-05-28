@@ -797,7 +797,7 @@ img {
 }
 
 /* .contact-form-wrapper {
-  display: inline-block;
+  display: block;
 } */
 .contact-form-header {
   display: block;
@@ -829,7 +829,7 @@ img {
   /* display: block; */
   position: relative;
 }
-
+.contact-form-field:hover + .form-field-icon,
 .contact-form-field:focus + .form-field-icon {
   fill: var(--ocean-color);
 }
@@ -923,6 +923,10 @@ img {
 
 /* --------- Privacy Policy---------- */
 
+.aaaa {
+  margin-bottom: 16px;
+}
+
 .agreement-wrapper {
   margin-bottom: 24px;
 }
@@ -955,13 +959,13 @@ img {
 .agreement-custom-checkbox {
   /* border: 1px solid var(--ocean-color);
   border-radius: 2px; */
-  margin-right: 8px;
+  /* margin-right: 8px; */
   cursor: pointer;
 }
 
-/* .agreement-icon {
+.agreement-checkbox {
   opacity: 0;
-} */
+}
 
 .agreement-checkbox:checked + .agreement-label > .agreement-checkbox-wrap {
   background-color: #404bbf;
