@@ -919,12 +919,11 @@ img {
 /* top: 8px;
   transform: translateY(8px);
   /* transform: translateX(16px); */
-*/
 
 /* --------- Privacy Policy---------- */
 
-.aaaa {
-  margin-bottom: 16px;
+.policy-agreement-wrapper {
+  margin-bottom: 24px;
 }
 
 .agreement-wrapper {
