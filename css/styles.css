@@ -831,12 +831,11 @@ img {
 }
 .contact-form-field:hover + .form-field-icon,
 .contact-form-field:focus + .form-field-icon {
-  fill: var(--ocean-color);
+  fill: #4d5ae5;
 }
 
 .contact-form-field {
   display: block;
-  /* position: absolute; */
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.4);
